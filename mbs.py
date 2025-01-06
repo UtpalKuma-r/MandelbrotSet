@@ -27,24 +27,132 @@ def colour(n):
 
 def main():
 
-    size = (1024, 1024) #Size of the image
+    size = (100000, 100000) #Size of the image
     im = image.new(mode="RGB", size=size) # creating a new image object
     arr = im.load()
     itter = 100 #How many times the recursion should run
-    # partPixelSize = 10000 #size of each part
+    partPixelSize = 10000 #size of each part
 
-    # parts = int(size[0]/partPixelSize) #no. of parts the image will be generated in
+    parts = int(size[0]/partPixelSize) #no. of parts the image will be generated in
 
+    # for i in range(parts):
+    #     for j in range(parts):
+    i = 0
 
-    for pixel_x in range(size[0]):
-        for pixel_y in range(size[1]):
-            z_realPart = (pixel_x-(2*size[0]/3))/(size[0]/3)
-            z_imagenaryPart = -(4*pixel_y-2*size[1])/size[1]
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
             z = complex(z_realPart, z_imagenaryPart)
             x = bounded(0, z, itter)
-            arr[pixel_x, pixel_y] = x
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
+            z = complex(z_realPart, z_imagenaryPart)
+            x = bounded(0, z, itter)
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
+            z = complex(z_realPart, z_imagenaryPart)
+            x = bounded(0, z, itter)
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
+            z = complex(z_realPart, z_imagenaryPart)
+            x = bounded(0, z, itter)
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
+            z = complex(z_realPart, z_imagenaryPart)
+            x = bounded(0, z, itter)
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
+            z = complex(z_realPart, z_imagenaryPart)
+            x = bounded(0, z, itter)
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
+            z = complex(z_realPart, z_imagenaryPart)
+            x = bounded(0, z, itter)
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
+            z = complex(z_realPart, z_imagenaryPart)
+            x = bounded(0, z, itter)
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
+            z = complex(z_realPart, z_imagenaryPart)
+            x = bounded(0, z, itter)
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
+    for pixel_x in range(partPixelSize):
+        for pixel_y in range(partPixelSize):
+            Rpixel_x = (partPixelSize*i)+pixel_x
+            Rpixel_y = (partPixelSize*i)+pixel_y
+            z_realPart = (Rpixel_x-(2*size[0]/3))/(size[0]/3)
+            z_imagenaryPart = (Rpixel_y-(2*size[0]/3))/(size[0]/3)
+            z = complex(z_realPart, z_imagenaryPart)
+            x = bounded(0, z, itter)
+            arr[Rpixel_x, Rpixel_y] = x
+    i += 1
+
 
     im.show()
+    im.save("MandelbrotSet.png")
+    im.save("MandelbrotSet.tiff")
 
 if __name__ == "__main__":
     main()
